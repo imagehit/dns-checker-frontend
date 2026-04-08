@@ -88,7 +88,7 @@ const Index = () => {
 
         <footer className="text-center text-xs text-muted-foreground pt-8 flex items-center justify-center gap-1.5">
           <Shield className="h-3 w-3" />
-          Powered by DNS Checker API
+          A DNS health checker
         </footer>
       </div>
     </div>
