@@ -21,11 +21,9 @@ const Index = () => {
   ) => {
     // Basic domain validation
     const domainRegex = /^(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$/;
-    // Basic IPv4 validation
-    const ipRegex = /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/;
 
-    if (!domainRegex.test(domain) && !ipRegex.test(domain)) {
-      setError("Please enter a valid domain name  (e.g., example.com).");
+    if (!domainRegex.test(domain)) {
+      setError("Please enter a valid domain name (e.g., example.com).");
       return;
     }
 
